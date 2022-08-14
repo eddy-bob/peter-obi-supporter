@@ -4,8 +4,24 @@ defineEmits<{ event: "closeVerify" }>();
 </script>
 <template>
   <div class="flex">
-    <img src="/images/svg/obi.svg" class="w-[35%]" />
-    <div class="bg-white min-h-screen h-auto py-4 w-[75%] space-y-32 px-28">
+    <div class="w-[35%] min-h-screen relative">
+      <img src="/images/svg/office.svg" class="" />
+      <div class="flex font-extrabold absolute text-white top-[7%] left-[15%]">
+        <span class="py-2 text-[23px]">PETER</span>
+        <img src="/images/png/logo.png" alt="" class="w-[40px] h-[40px] mt-1" />
+        <span class="py-2 text-[23px]">BI</span>
+      </div>
+      <p
+        class="text-white text-[35px] absolute bottom-[10%] font-extrabold left-[15%]"
+      >
+        This is our<br />
+        opportunity to<br />
+        take back our<br />
+        country
+      </p>
+    </div>
+
+    <div class="bg-white min-h-screen h-auto py-16 w-[75%] space-y-32 px-28">
       <div class="flex justify-between w-full">
         <p class="font-extrabold text-[16px]">STEP 1/3</p>
         <img
