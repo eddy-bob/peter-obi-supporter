@@ -1,18 +1,19 @@
 <script setup lang="ts">
 import { ref } from "vue";
-const emit = defineEmits(["closeVerify"]);
+defineEmits<{ event: "closeVerify" }>();
 </script>
 <template>
   <div class="flex">
-    <img
-      src="/images/svg/obi.svg"
-      class="w-[35%]"
-      @click="$emit('closeVerify')"
-    />
+    <img src="/images/svg/obi.svg" class="w-[35%]" />
     <div class="bg-white min-h-screen h-auto py-4 w-[75%] space-y-32 px-28">
       <div class="flex justify-between w-full">
         <p class="font-extrabold text-[16px]">STEP 1/3</p>
-        <img src="/images/png/Union.png" class="w-5 h-5" alt="" />
+        <img
+          src="/images/png/Union.png"
+          @click="$emit('closeVerify')"
+          class="w-5 h-5 cursor-pointer"
+          alt=""
+        />
       </div>
       <!--  -->
 
