@@ -4,7 +4,7 @@ const showVerify = inject<{ value: boolean }>("showVerify");
 const stepUp = inject<{ value: number }>("stepUp");
 // methods
 const verifyPhone = () => {
-  console.log(stepUp?.value)
+  console.log(stepUp?.value);
   stepUp!.value = 2;
 };
 </script>
@@ -25,23 +25,28 @@ const verifyPhone = () => {
       <div class="flex justify-center">
         <div>
           <div class="space-y-4">
-            <p class="font-extrabold leading-[40px] text-center text-[36px]">
+            <p class="font-extrabold leading-[40px] text-center text-[33px]">
               Verify your<br />
               Phone Number
             </p>
-            <p class="text-center font-extrabold text-[12px] textGrey">
+            <p class="text-center font-extrabold text-[12px] textGrey pb-6">
               Please enter the six (6) digit number sent to your<br />
               number ending with *****53722
             </p>
           </div>
           <div class="space-y-5">
-            <div class="flex">
-              <div class="flex"></div>
+            <div class="flex space-x-2">
+              <input type="text" class="w-[4rem] px-2 h-[4rem] bg-[#F8F8F8]" />
+              <input type="text" class="w-[4rem] px-2 h-[4rem] bg-[#F8F8F8]" />
+              <input type="text" class="w-[4rem] px-2 h-[4rem] bg-[#F8F8F8]" />
+              <input type="text" class="w-[4rem] px-2 h-[4rem] bg-[#F8F8F8]" />
+              <input type="text" class="w-[4rem] px-2 h-[4rem] bg-[#F8F8F8]" />
+              <input type="text" class="w-[4rem] px-2 h-[4rem] bg-[#F8F8F8]" />
             </div>
             <div class="space-y-5">
               <button
                 @click="verifyPhone"
-                class="bg-black flex px-28 py-4 space-x-2 text-[11px] font-extrabold text-white"
+                class="bg-black w-full  text-center py-4 space-x-2 text-[11px] font-extrabold text-white"
               >
                 CONFIRM NUMBER
               </button>
