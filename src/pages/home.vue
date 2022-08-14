@@ -571,19 +571,42 @@ import AppFooter from "../components/AppFooter.vue";
       <!-- section 7 -->
       <section>
         <div class="flex">
-          <div></div>
-          <div class="appGreebDark">
-            <p class="text-center">Let’s do this together, join us</p>
-            <div>
-              <input type="text" placeholder="FULL NAME" />
-              <input type="text" placeholder="PHONE NUMBER" />
-              <button
-                class="bg-black flex px-6 py-2 space-x-2 text-[12px] font-extrabold mt-1 text-wh"
-              >
-                JOIN US
-              </button>
+          <div class="w-full appGreenBg">
+            <img src="/public/images/svg/sectiontwocard.svg" class="w-[33rem] pt-28" alt="" />
+          </div>
+          <div class="appGreenDark w-full space-y-6 py-20 px-40">
+            <p
+              class="text-center leading-[48px] font-extrabold text-[38px] text-white"
+            >
+              Let’s do this together,<br />join us
+            </p>
+            <div class="flex">
+              <div class="font-extrabold text-[12px] w-full space-y-2">
+                <div class="w-full">
+                  <input
+                    type="text"
+                    placeholder="FULL NAME "
+                    class="py-5 px-5 outline-none w-full focus:outline-none text-[11px]"
+                  />
+                </div>
+                <div class="w-full">
+                  <input
+                    type="text"
+                    placeholder="PHONE NUMBER"
+                    class="py-5 px-5 outline-none w-full focus:outline-none text-[11px]"
+                  />
+                </div>
+
+                <div class="flex justify-center">
+                  <button
+                    class="bg-black flex px-28 py-4 space-x-2 text-[11px] font-extrabold text-white"
+                  >
+                    JOIN US
+                  </button>
+                </div>
+              </div>
             </div>
-            <p>
+            <p class="text-center text-white text-[11px]">
               Thank you for joining our campaign to elect Peter Dannta. By
               providing your mobile phone number you consent to receive
               recurring text messages from Peter for President. Message & Data
