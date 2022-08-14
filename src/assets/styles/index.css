@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.appGreen{color:#00923F}
+.appGreenBg{background-color: #00923F;}
+.appGreenDark{background-color: #006A2E;}
+.textGrey{color:#4E4E4E}
+.appRed{color:#E60019}
+.appRedBg{background-color:#E60019}
+.customBlack{color:#111315}
+.customGrey{background-color: #F4F4F4;}
+.appBlue{color:#0EA5E9}
+.myOverflow ::-webkit-scrollbar {
+       display: none;
+     }
+     
+     .myOverflow {
+       -ms-overflow-style: none;
+       scrollbar-width: none;
+     }
