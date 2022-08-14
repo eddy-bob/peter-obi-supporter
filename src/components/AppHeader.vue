@@ -9,10 +9,10 @@
     </div>
     <!-- main navigation links -->
     <div class="flex text-[12px] font-extrabold textGrey space-x-12 py-4">
-      <p>ABOUT</p>
-      <p>WHERE TO VOTE</p>
-      <p>VOLUNTEER</p>
-      <p>SHOP</p>
+      <router-link to="/">ABOUT</router-link>
+      <router-link to="/">WHERE TO VOTE</router-link>
+      <router-link to="/">VOLUNTEER</router-link>
+      <router-link to="/">SHOP</router-link>
     </div>
     <!-- button -->
     <div>

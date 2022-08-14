@@ -1,6 +1,11 @@
 <script setup lang="ts">
-import { ref } from "vue";
-defineEmits<{ event: "closeVerify" }>();
+import { ref, inject } from "vue";
+const showVerify = inject<{ value: boolean }>("showVerify");
+const stepUp = inject<{ value: number }>("stepUp");
+// methods
+const submit = () => {
+  stepUp!.value = 3;
+};
 </script>
 <template>
   <div class="min-h-screen h-full bg-white py-16">
@@ -9,7 +14,7 @@ defineEmits<{ event: "closeVerify" }>();
         <p class="font-extrabold text-[16px]">STEP 2/3</p>
         <img
           src="/images/png/Union.png"
-          @click="$emit('closeVerify')"
+          @click="showVerify = false"
           class="w-5 h-5 cursor-pointer"
           alt=""
         />
@@ -17,7 +22,7 @@ defineEmits<{ event: "closeVerify" }>();
       <!--  -->
 
       <div class="flex justify-center">
-        <div>
+        <div class="w-full px-36">
           <div class="space-y-4">
             <p class="font-extrabold text-center text-[33px]">
               Personal Information
@@ -43,27 +48,46 @@ defineEmits<{ event: "closeVerify" }>();
                 />
               </div>
               <div class="flex space-x-2">
-                <input
-                  type="text"
-                  placeholder="STATE"
-                  class="bg-[#F8F8F8] text-[10px] px-3 py-6 font-extrabold text-black w-full border-none focus:outline-none outline-none"
-                />
-                <input
-                  type="text"
-                  placeholder="L.G.A"
-                  class="bg-[#F8F8F8] text-[10px] px-3 py-6 font-extrabold text-black w-full border-none focus:outline-none outline-none"
-                />
-              </div>
-              <div class="flex space-x-3 font-extrabold text-[11px]">
-                <p class="">GENDER</p>
-                <div class="flex space-x-2">
-                  <label for="male">MALE</label>
-                  <input type="checkbox" name="male" id="male" />
+                <div class="bg-[#F8F8F8] px-3 w-full flex justify-between">
+                  <input
+                    type="text"
+                    placeholder="STATE"
+                    class="text-[10px] bg-transparent py-6 font-extrabold text-black w-full border-none focus:outline-none outline-none"
+                  />
+                  <img src="/images/png/down.png" class="w-2 h-1 mt-7" alt="" />
                 </div>
 
-                <div class="flex space-x-2">
-                  <label for="female">FEMALE</label>
-                  <input type="checkbox" name="female" id="female" />
+             <div class="bg-[#F8F8F8] px-3 w-full flex justify-between">
+                  <input
+                    type="text"
+                    placeholder="L.G.A"
+                    class="text-[10px] bg-transparent py-6 font-extrabold text-black w-full border-none focus:outline-none outline-none"
+                  />
+                  <img src="/images/png/down.png" class="w-2 h-1 mt-7" alt="" />
+                </div>
+              </div>
+              <div class="flex space-x-3 py-5 font-extrabold text-[11px]">
+                <p class="">GENDER</p>
+
+                <div class="flex space-x-3">
+                  <p>MALE</p>
+                  <label class="container" for="MALE">
+                    <input type="checkbox" class="mr-3" name="MALE" id="MALE" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div class="flex space-x-3">
+                  <p>FEMALE</p>
+                  <label class="container" for="FEMALE">
+                    <input
+                      type="checkbox"
+                      class="mr-3"
+                      name="FEMALE"
+                      id="FEMALE"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
                 </div>
               </div>
               <div class="w-full">
@@ -88,6 +112,7 @@ defineEmits<{ event: "closeVerify" }>();
             </div>
             <div class="flex justify-center">
               <button
+                @click="submit"
                 class="bg-black px-28 w-full py-4 space-x-2 text-[11px] font-extrabold text-white"
               >
                 NEXT

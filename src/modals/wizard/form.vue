@@ -1,9 +1,32 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, provide, shallowRef, watchEffect } from "vue";
 import complete from "./complete.vue";
 import eligibility from "./eligibility.vue";
 import info from "./info.vue";
 import verifyphone from "./verify-phone.vue";
+// variables
+const step = ref(1);
+const comp = shallowRef(verifyphone);
+// provider
+const stepUp = provide<{ value: number }>("stepUp", step);
+// methods
+
+watchEffect(() => {
+   switch (step.value) {
+    case 1:
+      comp.value = verifyphone;
+      break;
+    case 2:
+      comp.value = info;
+      break;
+    case 3:
+      comp.value = eligibility;
+      break;
+    case 4:
+      comp.value = complete;
+      break;
+  }
+});
 </script>
 <template>
   <div class="flex">
@@ -25,7 +48,7 @@ import verifyphone from "./verify-phone.vue";
     </div>
 
     <div class="w-[75%]">
-      <component :is="info" />
+      <component :is="comp" />
     </div>
   </div>
 </template>

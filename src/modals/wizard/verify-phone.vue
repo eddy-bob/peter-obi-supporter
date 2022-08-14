@@ -1,6 +1,12 @@
 <script setup lang="ts">
-import { ref } from "vue";
-defineEmits<{ event: "closeVerify" }>();
+import { inject } from "vue";
+const showVerify = inject<{ value: boolean }>("showVerify");
+const stepUp = inject<{ value: number }>("stepUp");
+// methods
+const verifyPhone = () => {
+  console.log(stepUp?.value)
+  stepUp!.value = 2;
+};
 </script>
 <template>
   <div class="min-h-screen h-full bg-white py-16">
@@ -9,7 +15,7 @@ defineEmits<{ event: "closeVerify" }>();
         <p class="font-extrabold text-[16px]">STEP 1/3</p>
         <img
           src="/images/png/Union.png"
-          @click="$emit('closeVerify')"
+          @click="showVerify = false"
           class="w-5 h-5 cursor-pointer"
           alt=""
         />
@@ -34,6 +40,7 @@ defineEmits<{ event: "closeVerify" }>();
             </div>
             <div class="space-y-5">
               <button
+                @click="verifyPhone"
                 class="bg-black flex px-28 py-4 space-x-2 text-[11px] font-extrabold text-white"
               >
                 CONFIRM NUMBER

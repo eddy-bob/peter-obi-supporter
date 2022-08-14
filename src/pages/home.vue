@@ -1,10 +1,17 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, provide } from "vue";
+
 import AppHeader from "../components/AppHeader.vue";
 import AppFooter from "../components/AppFooter.vue";
 import appForm from "../modals/wizard/form.vue";
+
 // variables
-const showVerifyPhone = ref(true);
+const showVerifyPhone = ref(false);
+// providers
+const showVerify = provide<{ value: boolean }>(
+  "showVerify",
+  showVerifyPhone
+);
 </script>
 
 <template>
