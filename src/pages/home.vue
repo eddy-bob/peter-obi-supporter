@@ -2,19 +2,19 @@
 import { ref } from "vue";
 import AppHeader from "../components/AppHeader.vue";
 import AppFooter from "../components/AppFooter.vue";
-import verifyPhone from "../modals/verify-phone.vue";
+import appForm from "../modals/wizard/form.vue";
 // variables
-const showVerifyPhone = ref(false);
+const showVerifyPhone = ref(true);
 </script>
 
 <template>
   <div class="min-h-screen h-auto relative">
     <!-- header -->
     <AppHeader class="" />
-    <verifyPhone
+    <appForm
       v-if="showVerifyPhone == true"
       @closeVerify="showVerifyPhone = false"
-      class="w-full min-h-screen h-auto relative z-50"
+      class="w-full min-h-screen h-auto absolute z-50"
     />
     <!-- Main body -->
     <div class="min-h-screen">
@@ -112,9 +112,10 @@ const showVerifyPhone = ref(false);
                 class="bg-white text-[10px] px-6 py-5 font-extrabold text-black w-full border-none focus:outline-none outline-none"
               />
               <button
+                @click="showVerifyPhone = true"
                 class="bg-black flex px-6 py-3 space-x-2 text-[12px] font-extrabold text-white"
               >
-                JOIN THE COALITIONS
+                BECOME A VOLUNTEER
               </button>
             </div>
           </div>
@@ -590,7 +591,7 @@ const showVerifyPhone = ref(false);
         <div class="flex">
           <div class="w-full appGreenBg">
             <img
-              src="/public/images/svg/sectiontwocard.svg"
+              src="/images/svg/sectiontwocard.svg"
               class="w-[33rem] pt-28"
               alt=""
             />
