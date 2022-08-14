@@ -2,12 +2,20 @@
 import { ref } from "vue";
 import AppHeader from "../components/AppHeader.vue";
 import AppFooter from "../components/AppFooter.vue";
+import verifyPhone from "../modals/verify-phone.vue";
+// variables
+const showVerifyPhone = ref(false);
 </script>
 
 <template>
   <div class="min-h-screen h-auto relative">
     <!-- header -->
     <AppHeader class="" />
+    <verifyPhone
+      v-if="showVerifyPhone == true"
+      @closeVerify="showVerifyPhone = false"
+      class="w-full min-h-screen h-auto relative z-50"
+    />
     <!-- Main body -->
     <div class="min-h-screen">
       <!-- section 1 -->
@@ -56,7 +64,10 @@ import AppFooter from "../components/AppFooter.vue";
                 </p>
               </div>
 
-              <button class="appGreenBg flex px-6 py-2 space-x-2">
+              <button
+                class="appGreenBg flex px-6 py-2 space-x-2"
+                @click="showVerifyPhone = true"
+              >
                 <span class="text-[12px] font-extrabold mt-1 text-white">
                   SEE THE PLAN</span
                 >
@@ -77,7 +88,10 @@ import AppFooter from "../components/AppFooter.vue";
                 </p>
               </div>
 
-              <button class="appGreenBg flex px-6 py-2 space-x-2">
+              <button
+                class="appGreenBg flex px-6 py-2 space-x-2"
+                @click="showVerifyPhone = true"
+              >
                 <span class="text-[12px] font-extrabold mt-1 text-white">
                   SEE THE PLAN</span
                 >
@@ -171,6 +185,7 @@ import AppFooter from "../components/AppFooter.vue";
                 </div>
 
                 <button
+                  @click="showVerifyPhone = true"
                   class="appGreenBg flex px-6 py-2 text-[12px] font-extrabold text-white space-x-2"
                 >
                   SEE THE PLAN
@@ -192,6 +207,7 @@ import AppFooter from "../components/AppFooter.vue";
                 </div>
 
                 <button
+                  @click="showVerifyPhone = true"
                   class="appGreenBg flex px-6 py-2 text-[12px] font-extrabold text-white space-x-2"
                 >
                   SEE THE PLAN
@@ -211,6 +227,7 @@ import AppFooter from "../components/AppFooter.vue";
                 </div>
 
                 <button
+                  @click="showVerifyPhone = true"
                   class="appGreenBg flex px-6 py-2 text-[12px] font-extrabold text-white space-x-2"
                 >
                   SEE THE PLAN
@@ -572,7 +589,11 @@ import AppFooter from "../components/AppFooter.vue";
       <section>
         <div class="flex">
           <div class="w-full appGreenBg">
-            <img src="/public/images/svg/sectiontwocard.svg" class="w-[33rem] pt-28" alt="" />
+            <img
+              src="/public/images/svg/sectiontwocard.svg"
+              class="w-[33rem] pt-28"
+              alt=""
+            />
           </div>
           <div class="appGreenDark w-full space-y-6 py-20 px-40">
             <p
