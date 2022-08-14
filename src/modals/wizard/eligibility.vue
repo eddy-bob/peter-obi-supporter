@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref, inject } from "vue";
 
-const showVerify = inject<{ value: boolean }>("showVerify");
-const stepUp = inject<{ value: number }>("stepUp");
+const showVerify = inject<any>("showVerify");
+const stepUp = inject<any>("stepUp");
 // methods
 const submit = () => {
   stepUp!.value = 4;

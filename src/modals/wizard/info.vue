@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, inject } from "vue";
-const showVerify = inject<{ value: boolean }>("showVerify");
-const stepUp = inject<{ value: number }>("stepUp");
+const showVerify = inject<any>("showVerify");
+const stepUp = inject<any>("stepUp");
 // methods
 const submit = () => {
   stepUp!.value = 3;
@@ -57,7 +57,7 @@ const submit = () => {
                   <img src="/images/png/down.png" class="w-2 h-1 mt-7" alt="" />
                 </div>
 
-             <div class="bg-[#F8F8F8] px-3 w-full flex justify-between">
+                <div class="bg-[#F8F8F8] px-3 w-full flex justify-between">
                   <input
                     type="text"
                     placeholder="L.G.A"
