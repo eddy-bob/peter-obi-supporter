@@ -105,9 +105,8 @@ const submit = () => {
                   belong to?
                 </p>
                 <div class="flex w-full space-x-3">
-                  <div class="flex justify-between">
+                  <div class="flex justify-between flex-wrap">
                     <div class="flex space-x-3">
-                      <p>APC</p>
                       <label class="container" for="APC">
                         <input
                           type="checkbox"
@@ -117,10 +116,10 @@ const submit = () => {
                         />
                         <span class="checkmark"></span>
                       </label>
+                      <p>APC</p>
                     </div>
 
                     <div class="flex space-x-3">
-                      <p>PDP</p>
                       <label class="container" for="PDP">
                         <input
                           type="checkbox"
@@ -130,9 +129,9 @@ const submit = () => {
                         />
                         <span class="checkmark"></span>
                       </label>
+                      <p>PDP</p>
                     </div>
                     <div class="flex space-x-3">
-                      <p>LABOUR</p>
                       <label class="container" for="LABOUR">
                         <input
                           type="checkbox"
@@ -142,9 +141,10 @@ const submit = () => {
                         />
                         <span class="checkmark"></span>
                       </label>
+                      <p>LABOUR</p>
                     </div>
                     <div class="flex space-x-3">
-                      <p>ANPP</p>
+                      
                       <label class="container" for="SDP">
                         <input
                           type="checkbox"
@@ -154,6 +154,7 @@ const submit = () => {
                         />
                         <span class="checkmark"></span>
                       </label>
+                      <p>ANPP</p>
                     </div>
                   </div>
                 </div>
