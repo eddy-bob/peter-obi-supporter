@@ -13,7 +13,17 @@
 .myOverflow ::-webkit-scrollbar {
        display: none;
      }
-     
+     body::-webkit-scrollbar {
+      display: none;
+    }
+    
+    html {
+      scrollbar-width: none;
+    }
+    .myOverflow {
+      scrollbar-width: none;
+   
+    }
      .myOverflow {
        -ms-overflow-style: none;
        scrollbar-width: none;
