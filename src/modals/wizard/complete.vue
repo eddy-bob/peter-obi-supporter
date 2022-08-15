@@ -32,7 +32,7 @@ const submit = () => {
             <div class="space-y-4">
               <p class="font-extrabold text-center leading-[38px] text-[32px]">
                 Thank your for joining<br />
-                the obidient team
+                the OBIDIENT team
               </p>
               <p class="font-extrabold text-[11px] text-center">
                 Stay tune for more updates via SMS, call or email

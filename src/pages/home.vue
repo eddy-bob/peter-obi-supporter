@@ -312,9 +312,7 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
           </div>
 
           <div class="absolute z-40 left-[8%] bottom-[8%]">
-            <p class="text-[34px] font-extrabold text-white">
-              Peter Dannta 2023
-            </p>
+            <p class="text-[34px] font-extrabold text-white">Obi|Datti 2023</p>
             <p class="text-[34px] font-extrabold text-[#7F7F7F]">
               Labour Party
             </p>
@@ -632,7 +630,7 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
               </div>
             </div>
             <p class="text-center text-white text-[11px]">
-              Thank you for joining our campaign to elect Peter Dannta. By
+              Thank you for joining our campaign to elect Obi Datti. By
               providing your mobile phone number you consent to receive
               recurring text messages from Peter for President. Message & Data
               Rates May Apply. Text HELP for Info. Text STOP to opt out. No
