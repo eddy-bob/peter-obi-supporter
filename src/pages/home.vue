@@ -420,7 +420,7 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
         <div class="md:px-36 px-10">
           <div class="space-y-7 mb-12">
             <p
-              class="md:text-[44px] text-[37px] md:leading-[30px] leading-[30px] font-extrabold"
+              class="md:text-[44px] text-[37px] md:leading-[30px] leading-[33px] font-extrabold"
             >
               The Latest News
             </p>
