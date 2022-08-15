@@ -31,7 +31,7 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
           class="md:w-auto w-screen md:h-auto h-96"
         />
         <p
-          class="absolute font-extrabold lg:text-[55px] text-[30px] lg:left-[11%] left-[10%] top-[29%] lg:leading-[70px] leading-[30px] text-white"
+          class="absolute font-extrabold lg:text-[55px] text-[30px] lg:left-[11%] left-[10%] top-[33%] lg:leading-[70px] leading-[30px] text-white"
         >
           Finally a Cause<br />
           That’s Worth Our<br />
@@ -166,8 +166,10 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
       </section>
 
       <!-- section 2 -->
-      <section class="md:pt-48 pt-32 md:pb-36 pb-20 md:px-36 px-10 ">
-        <div class="customGrey md:flex space-y-5 md:space-y-0 pt-5 md:pb-0 pb-5">
+      <section class="md:pt-48 pt-32 md:pb-36 pb-20 md:px-36 px-10">
+        <div
+          class="customGrey md:flex space-y-5 md:space-y-0 pt-5 md:pb-0 pb-5"
+        >
           <img src="/images/svg/sectiontwocard.svg" class="w-[20rem]" alt="" />
           <div class="space-y-5 md-px-0 px-5">
             <p
@@ -418,7 +420,7 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
         <div class="md:px-36 px-10">
           <div class="space-y-7 mb-12">
             <p
-              class="md:text-[44px] text-[37px] md:leading-[30px] leading-[20px] font-extrabold"
+              class="md:text-[44px] text-[37px] md:leading-[30px] leading-[30px] font-extrabold"
             >
               The Latest News
             </p>

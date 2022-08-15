@@ -104,58 +104,48 @@ const submit = () => {
                   What party does Peter Obi<br />
                   belong to?
                 </p>
-                <div class="flex w-full space-x-3">
-                  <div class="flex justify-between flex-wrap">
-                    <div class="flex space-x-3">
-                      <label class="container" for="APC">
-                        <input
-                          type="checkbox"
-                          class="mr-3"
-                          name="APC"
-                          id="APC"
-                        />
-                        <span class="checkmark"></span>
-                      </label>
-                      <p>APC</p>
-                    </div>
 
-                    <div class="flex space-x-3">
-                      <label class="container" for="PDP">
-                        <input
-                          type="checkbox"
-                          class="mr-3"
-                          name="PDP"
-                          id="PDP"
-                        />
-                        <span class="checkmark"></span>
-                      </label>
-                      <p>PDP</p>
-                    </div>
-                    <div class="flex space-x-3">
-                      <label class="container" for="LABOUR">
-                        <input
-                          type="checkbox"
-                          class="mr-3"
-                          name="LABOUR"
-                          id="LABOUR"
-                        />
-                        <span class="checkmark"></span>
-                      </label>
-                      <p>LABOUR</p>
-                    </div>
-                    <div class="flex space-x-3">
-                      
-                      <label class="container" for="SDP">
-                        <input
-                          type="checkbox"
-                          class="mr-3"
-                          name="SDP"
-                          id="SDP"
-                        />
-                        <span class="checkmark"></span>
-                      </label>
-                      <p>ANPP</p>
-                    </div>
+                <div class="w-full flex flex-wrap gap-3">
+                  <div class="flex space-x-3">
+                    <label class="container" for="APC">
+                      <input type="checkbox" class="mr-3" name="APC" id="APC" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <p>APC</p>
+                  </div>
+
+                  <div class="flex space-x-3">
+                    <label class="container" for="PDP">
+                      <input type="checkbox" class="mr-3" name="PDP" id="PDP" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <p>PDP</p>
+                  </div>
+                  <div class="flex space-x-3">
+                    <label class="container" for="LABOUR">
+                      <input
+                        type="checkbox"
+                        class="mr-3"
+                        name="LABOUR"
+                        id="LABOUR"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                    <p>LABOUR</p>
+                  </div>
+                  <div class="flex space-x-3">
+                    <label class="container" for="SDP">
+                      <input type="checkbox" class="mr-3" name="SDP" id="SDP" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <p>SDP</p>
+                  </div>
+                  <div class="flex space-x-3">
+                    <label class="container" for="ANPP">
+                      <input type="checkbox" class="mr-3" name="ANPP" id="ANPP" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <p>ANPP</p>
                   </div>
                 </div>
               </div>
