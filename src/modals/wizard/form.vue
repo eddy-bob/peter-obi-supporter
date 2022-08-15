@@ -29,8 +29,8 @@ watchEffect(() => {
 });
 </script>
 <template>
-  <div class="flex">
-    <div class="w-[35%] min-h-screen h-full relative">
+  <div class="lg:flex">
+    <div class="w-[35%] md:block hidden min-h-screen h-full relative">
       <img src="/images/svg/office.svg" class="" />
       <div class="flex font-extrabold absolute text-white top-[7%] left-[15%]">
         <span class="py-2 text-[23px]">PETER</span>
@@ -47,7 +47,7 @@ watchEffect(() => {
       </p>
     </div>
 
-    <div class="w-[75%]">
+    <div class="lg:w-[75%] w-full">
       <component :is="comp" />
     </div>
   </div>

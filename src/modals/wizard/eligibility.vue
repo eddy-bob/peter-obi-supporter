@@ -10,7 +10,7 @@ const submit = () => {
 </script>
 <template>
   <div class="min-h-screen h-full bg-white py-16">
-    <div class="space-y-16 px-28">
+    <div class="space-y-16 lg:px-28 px-10">
       <div class="flex justify-between w-full">
         <p class="font-extrabold text-[16px]">STEP 3/3</p>
 

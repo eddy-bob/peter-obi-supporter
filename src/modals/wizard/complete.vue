@@ -10,7 +10,7 @@ const submit = () => {
 </script>
 <template>
   <div class="min-h-screen h-full bg-white py-16">
-    <div class="space-y-48 px-28">
+    <div class="lg:space-y-48 space-y-20 lg:px-28 px-10">
       <div class="flex justify-between w-full">
         <p class="font-extrabold text-[16px]">STEP 3/3</p>
         <img
@@ -32,7 +32,7 @@ const submit = () => {
             <div class="space-y-4">
               <p class="font-extrabold text-center leading-[38px] text-[32px]">
                 Thank your for joining<br />
-                the OBIDIENT team
+                the OBIdient team
               </p>
               <p class="font-extrabold text-[11px] text-center">
                 Stay tune for more updates via SMS, call or email
