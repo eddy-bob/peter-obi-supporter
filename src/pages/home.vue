@@ -15,7 +15,7 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
 <template>
   <div class="min-h-screen h-auto relative">
     <!-- header -->
-    <AppHeader class="" />
+    <AppHeader  />
     <appForm
       v-if="showVerifyPhone == true"
       @closeVerify="showVerifyPhone = false"
