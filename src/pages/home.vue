@@ -7,6 +7,7 @@ import appForm from "../modals/wizard/form.vue";
 
 // variables
 const showVerifyPhone = ref(false);
+
 // providers
 const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
 </script>
@@ -21,7 +22,7 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
       class="w-full min-h-screen h-auto absolute z-50"
     />
     <!-- Main body -->
-    <div class="min-h-screen">
+    <div class="min-h-screen" v-if="showVerifyPhone == false">
       <!-- section 1 -->
       <section class="relative mb-52">
         <img src="/images/svg/sectionone.svg" alt="" />
@@ -302,10 +303,10 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
         <!--  -->
         <div class="relative mt-4">
           <div
-            class="absolute bg-[#141313] opacity-10 w-full h-full top-0 left-0 z-40"
+            class="absolute bg-[rgba(0,0,0,0.6)] w-full h-full top-0 left-0 z-30"
           ></div>
           <img src="/images/svg/sectionfourl.svg" alt="" class="w-full" />
-          <div class="absolute z-50 text-white top-[8%] left-[8%] space-y-20">
+          <div class="absolute z-40 text-white top-[8%] left-[8%] space-y-20">
             <div>
               <p class="leading-[48px] font-extrabold text-[50px]">
                 “Nigeria is not a producing<br />
@@ -316,7 +317,7 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
             </div>
           </div>
 
-          <div class="absolute z-50 left-[8%] bottom-[8%]">
+          <div class="absolute z-40 left-[8%] bottom-[8%]">
             <p class="text-[34px] font-extrabold text-white">
               Peter Dannta 2023
             </p>
@@ -324,7 +325,7 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
               Labour Party
             </p>
           </div>
-          <div class="absolute z-50 bottom-[16%] right-[8%]">
+          <div class="absolute z-40 bottom-[16%] right-[8%]">
             <p class="flex text-[34px] font-extrabold text-[#7F7F7F]">
               Volunteer
               <span
@@ -647,7 +648,7 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
       </section>
     </div>
     <!-- footer -->
-    <AppFooter />
+    <AppFooter v-if="showVerifyPhone == false"/>
   </div>
 </template>
 
