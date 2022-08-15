@@ -1,4 +1,5 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+</script>
 <template>
   <div class="w-full bg-black px-36 pt-24 space-y-20 pb-10">
     <div class="w-full flex justify-between">

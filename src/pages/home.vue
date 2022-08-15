@@ -629,6 +629,7 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
 
                 <div class="flex justify-center">
                   <button
+                    @click="showVerifyPhone = true"
                     class="bg-black flex px-28 py-4 space-x-2 text-[11px] font-extrabold text-white"
                   >
                     JOIN US
@@ -648,7 +649,7 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
       </section>
     </div>
     <!-- footer -->
-    <AppFooter v-if="showVerifyPhone == false"/>
+    <AppFooter v-if="showVerifyPhone == false" />
   </div>
 </template>
 
