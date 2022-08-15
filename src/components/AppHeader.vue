@@ -40,7 +40,7 @@ const showSide = ref(false);
       </div>
     </div>
     <AppHeaderMobile
-      class="md:hidden block w-screen h-screen"
+      class="md:hidden block w-screen h-[100%] fixed z-50"
       v-if="showSide == true"
       @closeNav="showSide = false"
     />

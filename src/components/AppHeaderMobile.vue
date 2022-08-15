@@ -16,7 +16,7 @@ const navigate = (route: string) => {
 };
 </script>
 <template>
-  <div class="w-full py-10 px-10 h-screen bg-black text-white fixed z-50">
+  <div class="w-full py-10 px-10 h-screen bg-black text-white ">
     <div class="w-full flex justify-between">
       <div class="flex font-extrabold">
         <span class="py-2 text-[21px]">PETER</span>
