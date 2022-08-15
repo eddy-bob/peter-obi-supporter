@@ -61,12 +61,12 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
           <p class="textGrey">03</p>
         </div>
         <!-- absolute card -->
-        <div class="absolute  md:flex md:bottom-[-37%] md:left-[10%]">
+        <div class="absolute bottom-[-55%] px-10 md:flex md:bottom-[-37%] md:left-[10%]">
           <div class="md:flex grid grid-cols-2">
             <div class="relative">
               <img
                 src="/images/svg/cardone.svg"
-                class="md:w-[19rem]  md:h-auto "
+                class="md:w-[19rem] md:h-auto"
                 alt=""
               />
               <div
@@ -77,7 +77,7 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
                     BETTER NIGERIA PLAN
                   </p>
                   <p
-                    class="font-extrabold md:text-[30px] text-[20px] md:leading-[34px] leading-5"
+                    class="font-extrabold md:text-[30px] text-[16px] md:leading-[34px] leading-5"
                   >
                     Create a country<br />
                     for very citizen
@@ -105,7 +105,7 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
             <div class="relative">
               <img
                 src="/images/png/flag.png"
-                class="md:w-[19rem]  md:h-auto"
+                class="md:w-[19rem] md:h-auto"
                 alt=""
               />
               <div
@@ -116,14 +116,14 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
                     BETTER NIGERIA PLAN
                   </p>
                   <p
-                    class="font-extrabold md:text-[30px] text-[20px] md:leading-[34px] leading-5"
+                    class="font-extrabold md:text-[30px] text-[16px] md:leading-[34px] leading-5"
                   >
                     Political change<br />
                     through activism
                   </p>
                 </div>
 
-                <button class="appGreenBg flex px-6 py-2 space-x-2">
+                <button class="appGreenBg flex md:px-6 px-3 py-2 space-x-2">
                   <span
                     class="md:text-[12px] text-[10px] font-extrabold mt-1 text-white"
                   >
