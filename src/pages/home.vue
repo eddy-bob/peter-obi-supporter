@@ -127,7 +127,7 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
           <img src="/images/svg/sectiontwocard.svg" class="w-[20rem]" alt="" />
           <div class="space-y-5">
             <p class="text-[34px] font-extrabold leading-[39px]">
-              Commit to call, chip in to support <br />Peter Obi and Yusuf Dannta
+              Commit to call, chip in to support <br />Peter Obi and Yusuf Datti
             </p>
 
             <p class="text-[12px] textGrey">
