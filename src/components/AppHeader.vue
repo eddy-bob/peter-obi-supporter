@@ -7,7 +7,7 @@ const showSide = ref(false);
 <template>
   <div>
     <div
-      class="md:w-full w-screen bg-white flex justify-between lg:px-36 px-6 md:px-10 fixed z-50 py-5"
+      class="md:w-full w-screen bg-white flex justify-between lg:px-36 px-10 md:px-10 fixed z-50 py-5"
     >
       <!-- header logo -->
       <div class="flex font-extrabold">
