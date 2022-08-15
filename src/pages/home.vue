@@ -300,7 +300,9 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
       <!-- section 4 -->
       <section class="md:pb-36 pb-20 md:px-36 px-10 md:space-y-12 space-y-7">
         <div class="md:space-y-10 space-y-7">
-          <p class="md:text-[47px] text-[40px] font-extrabold leading-[50px]">
+          <p
+            class="md:text-[47px] text-[37px] font-extrabold md:leading-[50px] leading-[36px]"
+          >
             This is our opportunity to<br />
             take back our country
           </p>
@@ -375,7 +377,7 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
           <div class="absolute z-40 text-white top-[8%] left-[8%] space-y-20">
             <div>
               <p
-                class="md:leading-[48px] leading-[30px] font-extrabold md:text-[50px] text-[32px]"
+                class="md:leading-[48px] leading-[27px] font-extrabold md:text-[50px] text-[25px]"
               >
                 “Nigeria is not a producing<br />
                 country. The cumulative effect<br />
@@ -387,13 +389,15 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
 
           <div class="absolute z-40 left-[8%] bottom-[8%]">
             <p class="md:text-[34px] text-[22px] font-extrabold text-white">
-              Obi|Datti 2023
+              Obi | Datti 2023
             </p>
             <p class="md:text-[34px] text-[22px] font-extrabold text-[#7F7F7F]">
               Labour Party
             </p>
           </div>
-          <div class="absolute z-40 bottom-[16%] right-[8%]">
+          <div
+            class="absolute z-40 md:bottom-[16%] bottom-[-2px] md:right-[8%] right-[45%]"
+          >
             <p
               class="flex md:text-[34px] text-[22px] font-extrabold text-[#7F7F7F]"
             >
@@ -402,7 +406,7 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
                 ><img
                   src="/images/png/arrow-right.png"
                   alt="icon"
-                  class="mt-4 ml-2"
+                  class="md:mt-4 mt-2 ml-2"
               /></span>
             </p>
           </div>
@@ -410,10 +414,14 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
       </section>
 
       <!-- section 5 -->
-      <section class="pb-36">
-        <div class="px-36">
+      <section class="md:pb-36 pb-1">
+        <div class="md:px-36 px-10">
           <div class="space-y-7 mb-12">
-            <p class="text-[44px] font-extrabold">The Latest News</p>
+            <p
+              class="md:text-[44px] text-[37px] md:leading-[30px] leading-[20px] font-extrabold"
+            >
+              The Latest News
+            </p>
             <p class="text-[13px] leading-[20px] text-[#7F7F7F]">
               Nigerians remain hopeful for a national rebirth, which implies
               returning Nigeria to Nigerians; farmers,<br />
@@ -424,7 +432,7 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
           </div>
         </div>
         <!-- grid -->
-        <div class="pl-36 overflow-x-scroll myOverflow">
+        <div class="lg:pl-36 pl-10 overflow-x-scroll myOverflow">
           <div class="flex space-x-4">
             <div class="space-y-5 shrink-0">
               <img
@@ -496,13 +504,19 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
         </div>
       </section>
       <!-- section 6 -->
-      <section class="pb-36 px-36 bg-[#FAFAFA] space-y-12 py-16">
+      <section
+        class="md:pb-36 pb- md:px-36 px-10 bg-[#FAFAFA] space-y-12 py-16"
+      >
         <p class="leading-[44px] font-extrabold text-[36px]">
           People are saying about our<br />
           previous events
         </p>
-        <div class="grid grid-cols-4 gap-5">
-          <div class="bg-white rounded-md p-4 space-y-4 border">
+        <div
+          class="md:grid flex lg:grid-cols-4 md:grid-cols-3 md:overflow-x-hidden overflow-x-scroll myOverflow gap-5"
+        >
+          <div
+            class="bg-white shrink-0 rounded-md p-4 space-y-4 border md:w-auto w-full"
+          >
             <div class="flex justify-between">
               <div class="flex w-full space-x-2">
                 <img src="/images/png/iconone.png" class="w-10 h-9" alt="" />
@@ -522,7 +536,9 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
             </p>
           </div>
           <!--  -->
-          <div class="bg-white rounded-md p-4 space-y-4 border">
+          <div
+            class="bg-white shrink-0 rounded-md p-4 space-y-4 border md:w-auto w-full"
+          >
             <div class="flex justify-between">
               <div class="flex w-full space-x-2">
                 <img src="/images/png/iconone.png" class="w-10 h-9" alt="" />
@@ -542,7 +558,9 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
             </p>
           </div>
           <!--  -->
-          <div class="bg-white rounded-md p-4 space-y-4 border">
+          <div
+            class="bg-white shrink-0 rounded-md p-4 space-y-4 border md:w-auto w-full"
+          >
             <div class="flex justify-between">
               <div class="flex w-full space-x-2">
                 <img src="/images/png/iconone.png" class="w-10 h-9" alt="" />
@@ -562,7 +580,9 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
             </p>
           </div>
           <!--  -->
-          <div class="bg-white rounded-md p-4 space-y-4 border">
+          <div
+            class="bg-white shrink-0 rounded-md p-4 space-y-4 border md:w-auto w-full"
+          >
             <div class="flex justify-between">
               <div class="flex w-full space-x-2">
                 <img src="/images/png/iconone.png" class="w-10 h-9" alt="" />
@@ -582,7 +602,9 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
             </p>
           </div>
           <!--  -->
-          <div class="bg-white rounded-md p-4 space-y-4 border">
+          <div
+            class="bg-white shrink-0 rounded-md p-4 space-y-4 border md:w-auto w-full"
+          >
             <div class="flex justify-between">
               <div class="flex w-full space-x-2">
                 <img src="/images/png/iconone.png" class="w-10 h-9" alt="" />
@@ -602,7 +624,9 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
             </p>
           </div>
           <!--  -->
-          <div class="bg-white rounded-md p-4 space-y-4 border">
+          <div
+            class="bg-white shrink-0 rounded-md p-4 space-y-4 border md:w-auto w-full"
+          >
             <div class="flex justify-between">
               <div class="flex w-full space-x-2">
                 <img src="/images/png/iconone.png" class="w-10 h-9" alt="" />
@@ -622,7 +646,9 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
             </p>
           </div>
           <!--  -->
-          <div class="bg-white rounded-md p-4 space-y-4 border">
+          <div
+            class="bg-white shrink-0 rounded-md p-4 space-y-4 border md:w-auto w-full"
+          >
             <div class="flex justify-between">
               <div class="flex w-full space-x-2">
                 <img src="/images/png/iconone.png" class="w-10 h-9" alt="" />
@@ -642,7 +668,9 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
             </p>
           </div>
           <!--  -->
-          <div class="bg-white rounded-md p-4 space-y-4 border">
+          <div
+            class="bg-white shrink-0 rounded-md p-4 space-y-4 border md:w-auto w-full"
+          >
             <div class="flex justify-between">
               <div class="flex w-full space-x-2">
                 <img src="/images/png/iconone.png" class="w-10 h-9" alt="" />
@@ -666,7 +694,7 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
       </section>
       <!-- section 7 -->
       <section>
-        <div class="flex">
+        <div class="md:flex">
           <div class="w-full appGreenBg">
             <img
               src="/images/svg/sectiontwocard.svg"
@@ -674,9 +702,9 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
               alt=""
             />
           </div>
-          <div class="appGreenDark w-full space-y-6 py-20 px-40">
+          <div class="appGreenDark w-full space-y-6 py-20 md:px-40 px-10">
             <p
-              class="text-center leading-[48px] font-extrabold text-[38px] text-white"
+              class="text-center md:leading-[48px] leading-[37px] font-extrabold md:text-[38px] text-[33px] text-white"
             >
               Let’s do this together,<br />join us
             </p>
@@ -686,21 +714,21 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
                   <input
                     type="text"
                     placeholder="FULL NAME "
-                    class="py-5 px-5 outline-none w-full focus:outline-none text-[11px]"
+                    class="md:py-5 py-3 px-5 outline-none w-full focus:outline-none text-[11px]"
                   />
                 </div>
                 <div class="w-full">
                   <input
                     type="text"
                     placeholder="PHONE NUMBER"
-                    class="py-5 px-5 outline-none w-full focus:outline-none text-[11px]"
+                    class="md:py-5 py-3 px-5 outline-none w-full focus:outline-none text-[11px]"
                   />
                 </div>
 
                 <div class="flex justify-center">
                   <button
                     @click="showVerifyPhone = true"
-                    class="bg-black flex px-28 py-4 space-x-2 text-[11px] font-extrabold text-white"
+                    class="bg-black flex md:px-28 lg:w-auto w-full justify-center py-4 space-x-2 text-[11px] font-extrabold text-white"
                   >
                     JOIN US
                   </button>

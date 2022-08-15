@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 </script>
 <template>
-  <div class="w-full bg-black px-36 pt-24 space-y-20 pb-10">
-    <div class="w-full flex justify-between">
+  <div class="w-full bg-black md:px-36 px-10 pt-24 space-y-20 pb-10">
+    <div class="w-full md:flex justify-between">
       <div class="space-y-16">
         <!--  -->
         <p class="text-white text-[26px] font-extrabold">
@@ -62,7 +62,7 @@
 
     <div class="flex space-x-56 text-[#7F7F7F] text-[11px] ">
       <p class="w-full">All Rights Reserved.</p>
-      <div class="flex space-x-10 w-full">
+      <div class="md:flex md:space-x-10 w-full">
         <p>Useful Links</p>
         <p>Store</p>
         <p>Contact Us</p>
