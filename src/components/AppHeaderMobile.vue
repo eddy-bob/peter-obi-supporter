@@ -16,17 +16,17 @@ const navigate = (route: string) => {
 };
 </script>
 <template>
-  <div class="w-full py-10 px-10 h-screen bg-black text-white ">
+  <div class="w-full py-10 px-10 h-screen bg-black text-white">
     <div class="w-full flex justify-between">
-      <div class="flex font-extrabold">
-        <span class="py-2 text-[21px]">PETER</span>
-        <img
-          src="/images/png/logo.png"
-          alt=""
-          text-white
-          class="w-[38px] h-[38px] mt-1"
-        />
-        <span class="py-2 text-[21px]">BI</span>
+      <div class="flex font-extrabold space-x-1">
+        <div class="space-x-1">
+          <span class="py-2 text-[22px]">Obi</span>
+          <span class="py-2 text-[22px]">|</span>
+        </div>
+        <div>
+          <span class="py-2 text-[22px]">Datti </span>
+          <span class="py-2 text-[22px] appGreen">2023</span>
+        </div>
       </div>
       <img
         src="/images/png/Union.png"

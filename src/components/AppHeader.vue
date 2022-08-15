@@ -11,9 +11,16 @@ const showSide = ref(false);
     >
       <!-- header logo -->
       <div class="flex font-extrabold">
-        <span class="py-2 text-[23px]">PETER</span>
-        <img src="/images/png/logo.png" alt="" class="w-[40px] h-[40px] mt-1" />
-        <span class="py-2 text-[23px]">BI</span>
+        <div class="flex font-extrabold space-x-1 mt-2">
+          <div class="space-x-1">
+            <span class="py-2 text-[22px]">Obi</span>
+            <span class="py-2 text-[22px]">|</span>
+          </div>
+          <div>
+            <span class="py-2 text-[22px]">Datti </span>
+            <span class="py-2 text-[22px] appGreen">2023</span>
+          </div>
+        </div>
       </div>
       <!-- hamburger icon -->
       <div class="md:hidden block cursor-pointer" @click="showSide = true">
