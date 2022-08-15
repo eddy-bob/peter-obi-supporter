@@ -61,16 +61,16 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
           <p class="textGrey">03</p>
         </div>
         <!-- absolute card -->
-        <div class="absolute md:flex md:bottom-[-37%] bottom-[-55%] left-[10%]">
+        <div class="absolute px-10 md:flex md:bottom-[-37%] md:top-0 top-[70%]">
           <div class="flex">
             <div class="relative">
               <img
                 src="/images/svg/cardone.svg"
-                class="md:w-[19rem] w-[30rem]"
+                class="md:w-[19rem] w-[22rem] md:h-auto h-[150px]"
                 alt=""
               />
               <div
-                class="absolute text-white md:top-[15%] top-[4%] left-[8%] md:space-y-20 space-y-3"
+                class="absolute text-white md:top-[15%] top-[4%] left-[8%] md:space-y-20 space-y-[10px]"
               >
                 <div>
                   <p class="md:text-[12px] text-[10px] tracking-[4px]">
@@ -105,7 +105,7 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
             <div class="relative">
               <img
                 src="/images/png/flag.png"
-                class="md:w-[19rem] w-[30rem]"
+                class="md:w-[19rem] w-[23rem] md:h-auto h-[150px]"
                 alt=""
               />
               <div
