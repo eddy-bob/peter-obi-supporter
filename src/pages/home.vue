@@ -396,7 +396,7 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
             </p>
           </div>
           <div
-            class="absolute z-40 md:bottom-[16%] bottom-[-2px] md:right-[8%] right-[45%]"
+            class="absolute z-40 md:bottom-[16%] bottom-[-2px] md:right-[8%] right-[50%]"
           >
             <p
               class="flex md:text-[34px] text-[22px] font-extrabold text-[#7F7F7F]"
