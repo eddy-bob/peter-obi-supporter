@@ -15,7 +15,7 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
 <template>
   <div class="min-h-screen h-auto relative">
     <!-- header -->
-    <AppHeader  />
+    <AppHeader />
     <appForm
       v-if="showVerifyPhone == true"
       @closeVerify="showVerifyPhone = false"
@@ -69,10 +69,7 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
                 </p>
               </div>
 
-              <button
-                class="appGreenBg flex px-6 py-2 space-x-2"
-                @click="showVerifyPhone = true"
-              >
+              <button class="appGreenBg flex px-6 py-2 space-x-2">
                 <span class="text-[12px] font-extrabold mt-1 text-white">
                   SEE THE PLAN</span
                 >
@@ -93,10 +90,7 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
                 </p>
               </div>
 
-              <button
-                class="appGreenBg flex px-6 py-2 space-x-2"
-                @click="showVerifyPhone = true"
-              >
+              <button class="appGreenBg flex px-6 py-2 space-x-2">
                 <span class="text-[12px] font-extrabold mt-1 text-white">
                   SEE THE PLAN</span
                 >
