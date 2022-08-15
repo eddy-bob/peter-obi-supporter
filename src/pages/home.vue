@@ -166,8 +166,8 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
       </section>
 
       <!-- section 2 -->
-      <section class="md:pt-48 pt-32 md:pb-36 pb-20 md:px-36 px-10">
-        <div class="customGrey md:flex space-y-5 md:space-y-0 pt-5">
+      <section class="md:pt-48 pt-32 md:pb-36 pb-20 md:px-36 px-10 ">
+        <div class="customGrey md:flex space-y-5 md:space-y-0 pt-5 md:pb-0 pb-5">
           <img src="/images/svg/sectiontwocard.svg" class="w-[20rem]" alt="" />
           <div class="space-y-5 md-px-0 px-5">
             <p

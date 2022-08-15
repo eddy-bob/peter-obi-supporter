@@ -54,19 +54,19 @@ const submit = () => {
                 <p class="w-full">Do you own a smart phone?</p>
                 <div class="w-full flex space-x-3">
                   <div class="flex space-x-3">
-                    <p>YES</p>
                     <label class="container" for="Yes">
                       <input type="checkbox" class="mr-3" name="Yes" id="Yes" />
                       <span class="checkmark"></span>
                     </label>
+                    <p>YES</p>
                   </div>
 
                   <div class="flex space-x-3">
-                    <p>NO</p>
                     <label class="container" for="no">
                       <input type="checkbox" class="mr-3" name="no" id="no" />
                       <span class="checkmark"></span>
                     </label>
+                    <p>NO</p>
                   </div>
                 </div>
               </div>
@@ -78,7 +78,6 @@ const submit = () => {
                 </p>
                 <div class="w-full flex space-x-3">
                   <div class="flex space-x-3">
-                    <p>YES</p>
                     <label class="container" for="yes2">
                       <input
                         type="checkbox"
@@ -88,14 +87,15 @@ const submit = () => {
                       />
                       <span class="checkmark"></span>
                     </label>
+                    <p>YES</p>
                   </div>
 
                   <div class="flex space-x-3">
-                    <p>NO</p>
                     <label class="container" for="no2">
                       <input type="checkbox" class="mr-3" name="no" id="no2" />
                       <span class="checkmark"></span>
                     </label>
+                    <p>NO</p>
                   </div>
                 </div>
               </div>
@@ -105,7 +105,7 @@ const submit = () => {
                   belong to?
                 </p>
                 <div class="flex w-full space-x-3">
-                  <div class="flex space-x-3 flex-wrap">
+                  <div class="flex justify-between">
                     <div class="flex space-x-3">
                       <p>APC</p>
                       <label class="container" for="APC">
