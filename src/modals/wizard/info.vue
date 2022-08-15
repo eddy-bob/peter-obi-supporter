@@ -106,7 +106,7 @@ const submit = () => {
               </div>
             </div>
           </div>
-          <div class=" ">
+          <div class="space-y-5">
             <div class="flex justify-center mt-5">
               <button
                 @click="submit"
@@ -115,6 +115,13 @@ const submit = () => {
                 NEXT
               </button>
             </div>
+            <p class="font-extrabold text-[11px] text-[#4E4E4E]">
+              Thank you for joining our campaign to elect PeterAhmed. By
+              providing your mobile phone number you consent to receive
+              recurring text messages from Peter for President. Message & Data
+              Rates May Apply. Text HELP for Info. Text STOP to opt out. No
+              purchase necessary. Terms and Conditions and Privacy Policy.
+            </p>
           </div>
         </div>
       </div>
