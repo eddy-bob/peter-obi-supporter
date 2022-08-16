@@ -12,7 +12,7 @@ const stepUp = provide<{ value: number }>("stepUp", step);
 // methods
 
 watchEffect(() => {
-   switch (step.value) {
+  switch (step.value) {
     case 1:
       comp.value = verifyphone;
       break;
@@ -30,9 +30,11 @@ watchEffect(() => {
 </script>
 <template>
   <div class="lg:flex">
-    <div class="w-[35%] md:block hidden min-h-screen h-full relative">
-      <img src="/images/svg/office.svg" class="" />
-       <div class="flex font-extrabold space-x-1 absolute  text-white top-[7%] left-[15%]">
+    <div class="w-[35%] md:block hidden min-h-screen relative">
+      <img src="/images/svg/office.svg" class="h-screen" />
+      <div
+        class="flex font-extrabold space-x-1 absolute text-white top-[7%] left-[15%]"
+      >
         <div class="space-x-1">
           <span class="py-2 text-[22px]">Obi</span>
           <span class="py-2 text-[22px]">|</span>
@@ -42,7 +44,7 @@ watchEffect(() => {
           <span class="py-2 text-[22px] appGreen">2023</span>
         </div>
       </div>
-      
+
       <p
         class="text-white text-[35px] absolute bottom-[10%] font-extrabold left-[15%]"
       >
@@ -53,7 +55,7 @@ watchEffect(() => {
       </p>
     </div>
 
-    <div class="lg:w-[75%] w-full">
+    <div class="lg:w-[75%] w-full h-screen overflow-y-scroll myOverflow ">
       <component :is="comp" />
     </div>
   </div>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, inject } from "vue";
-
+import selectImage from "../../mixin/choose-file";
 const showVerify = inject<any>("showVerify");
 const stepUp = inject<any>("stepUp");
 // methods
@@ -142,7 +142,12 @@ const submit = () => {
                   </div>
                   <div class="flex space-x-3">
                     <label class="container" for="ANPP">
-                      <input type="checkbox" class="mr-3" name="ANPP" id="ANPP" />
+                      <input
+                        type="checkbox"
+                        class="mr-3"
+                        name="ANPP"
+                        id="ANPP"
+                      />
                       <span class="checkmark"></span>
                     </label>
                     <p>ANPP</p>

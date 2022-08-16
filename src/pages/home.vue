@@ -61,7 +61,7 @@ const showVerify = provide<{ value: boolean }>("showVerify", showVerifyPhone);
           <p class="textGrey">03</p>
         </div>
         <!-- absolute card -->
-        <div class="absolute bottom-[-55%] px-10 md:flex md:bottom-[-37%] md:left-[10%]">
+        <div class="absolute bottom-[-55%] md:px-0 px-10 md:flex md:bottom-[-37%] md:left-[10%]">
           <div class="md:flex grid grid-cols-2">
             <div class="relative">
               <img
